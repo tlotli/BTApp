@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+      <link rel="stylesheet" href="css/font-awesome.css">
+      <link rel="stylesheet" href="css/font-awesome2.css">   
+       <!-- Path to Framework7 Library CSS-->
+      
+      <link href="css/jquery.socialfeed.css" rel="stylesheet" type="text/css">
+      
+      <link rel="stylesheet" href="css/framework7.material.css">
+      <link rel="stylesheet" href="css/framework7.material.colors.css">
+      <link rel="stylesheet" href="css/my-app.css">
+      
+      <!-- Music Css -->
+      <link rel="stylesheet" href="css/APlayer.min.css">        <title>Hello World</title>
+    </head>
+    <body>
+		<div class="views"> <!-- Nav bar settings -->
+        	<div class="view view-main"> <!-- View main -->
+            	<div class="pages navbar-fixed toolbar-fixed"> 
+                	<div class="page" data-page="index">
+                    	<div class="navbar">
+                        	<div class="navbar-inner">
+                            	<div class="center">Music</div>
+                            </div>
+                        </div>
+                        
+                        <div class="toolbar toolbar-bottom"> <!-- Toolbar -->
+                        	<div class="toolbar-inner">
+                                <a href="#music" class="link"><i class="fa fa-music"></i></a>
+                                <a href="#videos" class="link"><i class="fa fa-youtube-square"></i></a>
+                                <a href="#announcements" class="link"><i class="fa fa-microphone"></i></a>
+                                <a href="#calendar" class="link"><i class="fa fa-calendar"></i></a>
+                                <a href="#twitter" class="link"><i class="fa fa-twitter"></i></a>
+                            </div>
+                        </div> <!-- Toolbar  End-->
+                        
+                        <div class="page-content">
+                        	 <!-- Subnav bar this is for the sub menu -->           
+        <div class="subnavbar">
+          <div class="buttons-row">
+            <a href="#tab1" class="button tab-link active">Albums</a>
+            <a href="#tab2" class="button tab-link">Songs</a>
+            
+          </div>
+        </div>
+
+		<div class="tabs"> <!-- tab container start -->
+        	<div id="tab1" class="tab active"> <!-- First start  -->
+            	<div class="card">
+                	<div class="card-header"></div>
+                    <div class="card-content">
+                    	<div class="list-block media-list">
+                        	<ul>
+                            	<li class="item-content">
+                                	<div class="item-media">
+                                    	<img src="img/Brian 111Temba.jpg" width="44">
+                                    </div>
+                                    <div class="item-inner">
+                                    	<div class="item-title-row">
+                                        	<div class="item-title">Something Better</div>
+                                            <div class="item-after"><a href="#" onclick="window.open('https://itunes.apple.com/za/album/something-better/id370200670
+', '_blank', 'location=no,toolbar=no');">Buy</a></div>
+                                        </div>
+                                        	<div class="item-subtitle">2010</div>
+                                    </div>
+                                </li>
+                                <li class="item-content">
+                                	<div class="item-media">
+                                    	<img src="img/unnamed.jpg" width="44">
+                                    </div>
+                                    <div class="item-inner">
+                                    	<div class="item-title-row">
+                                        	<div class="item-title">51Lex Presents Dominoes</div>
+                                            <div class="item-after">		
+                                            <a href="#" onclick="window.open('https://itunes.apple.com/za/album/51lex-presents-dominoes/id420523540', '_blank', 'location=no,toolbar=no');">Buy</a></div>
+                                        </div>
+                                        <div class="item-subtitle">2011</div>
+                                    </div>
+                                </li>
+                                <li class="item-content">
+                                	<div class="item-media">
+                                    	<img src="img/600x600.jpg" width="44">
+                                    </div>
+                                    <div class="item-inner">
+                                    	<div class="item-title-row">
+                                        	<div class="item-title">T.I.M.T This Is My Time</div>
+                                                                                        <div class="item-after">		
+                                            <a href="#" onclick="window.open('https://itunes.apple.com/za/artist/brian-temba/id275485372', '_blank', 'location=no,toolbar=no');">Buy</a></div>
+
+                                        </div>
+                                        <div class="item-subtitle">2012</div>
+                                    </div>
+                                
+                                                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>	
+            </div> <!-- First End  tab end -->
+            
+            <!-- Modals for albums -->
+            
+            
+            <div id="tab2" class="tab"> <!-- Second tab  start-->  
+            	<div class="content-block">
+					
+                    
+                    
+                    <div id="player"></div>
+                    
+                    
+                    
+               
+
+    			</div>
+            </div> <!-- Second tab end -->
+        </div> <!-- tab container end --> 		  		
+        </div><!-- page content tabs and stuff -->    
+</div>
+<!-- End Page -->
+
+                    
+                    <div class="page cached" data-page="videos">
+                        <div class="navbar">
+                        	<div class="navbar-inner">
+                            	<div class="center">Music Videos</div>
+                            </div>
+                        </div>
+                        
+                        <div class="toolbar toolbar-bottom"> <!-- Toolbar -->
+                        	<div class="toolbar-inner">
+                            	
+                                <a href="#index" class="link"><i class="fa fa-music"></i></a>
+                                <a href="#videos" class="link"><i class="fa fa-youtube-square"></i></a>
+                                <a href="#announcements" class="link"><i class="fa fa-microphone"></i></a>
+                                <a href="#calendar" class="link"><i class="fa fa-calendar"></i></a>
+                                <a href="#twitter" class="link"><i class="fa fa-twitter"></i></a>
+                                
+                            </div>
+                        </div> <!-- look at this guy -->
+                        
+    <div class="page-content"> 
+		<div>
+     		          
+<div class="content" style="padding-left: 20px; padding-right: 20px;">
+            <div class="header-clear-large"></div>
+            <!--Page content goes here, fixed elements go above the all elements class-->
+               
+                <div class="decoration"></div>
+                <div class="one-half-responsive">
+                    <h3>Brian Temba - Zanele</h3>
+
+                    <div class="responsive-video full-bottom">
+                        <iframe src="https://www.youtube.com/embed/gcPweFtIexY" style="width:100%"></iframe>
+                    </div> 
+                </div>
+                
+                
+                <div class="decoration"></div>
+                <div class="one-half-responsive">
+                    <h3>Brian Temba - T.I.M.T</h3>
+
+                    <div class="responsive-video full-bottom">
+                        <iframe src="https://www.youtube.com/embed/JtHNQ90HSV4" style="width:100%"></iframe>
+                    </div> 
+                </div>
+                
+                
+                <div class="decoration"></div>
+                <div class="one-half-responsive">
+                    <h3>Brian Temba - Dominoes</h3>
+
+                    <div class="responsive-video full-bottom">
+                        <iframe src="https://www.youtube.com/embed/Wh8spc6WWWU" style="width:100%"></iframe>
+                    </div> 
+                </div>
+               
+               
+                <div class="decoration"></div>
+                <div class="one-half-responsive">
+                    <h3>Brian Themba & Moneoa</h3>
+
+                    <div class="responsive-video full-bottom">
+                        <iframe src="https://www.youtube.com/embed/mlAaxp2b6nI" style="width:100%"></iframe>
+                    </div> 
+                </div>
+               
+               
+               
+               
+
+                
+                <div class="decoration"></div>
+                                          
+            <!-- End of entire page content-->
+            </div>
+ 
+
+                    <div class="page cached" data-page="announcements">
+                        <div class="navbar">
+                        	<div class="navbar-inner">
+                            	<div class="center">Announcements</div>
+                            </div>
+                        </div>
+                        
+                        <div class="toolbar toolbar-bottom"> <!-- Toolbar -->
+                        	<div class="toolbar-inner">
+                            	
+                                <a href="#index" class="link"><i class="fa fa-music"></i></a>
+                                <a href="#videos" class="link"><i class="fa fa-youtube-square"></i></a>
+                                <a href="#announcements" class="link"><i class="fa fa-microphone"></i></a>
+                                <a href="#calendar" class="link"><i class="fa fa-calendar"></i></a>
+                                <a href="#twitter" class="link"><i class="fa fa-twitter"></i></a>
+                                
+                            </div>
+                        </div> <!-- look at this guy -->
+                        
+                        
+ <div class="page-content">
+     
+        
+          
+          <p>Announcements Coming Soon</p>
+              
+                     
+          
+</div>
+
+                       
+                        
+                        
+                        <div class="page cached" data-page="calendar">
+                        <div class="navbar">
+                        	<div class="navbar-inner">
+                            
+                            
+                            
+                            	<div class="center">Tour Dates</div>
+                            </div>
+                        </div>
+                        
+                        <div class="toolbar toolbar-bottom"> <!-- Toolbar -->
+                        	<div class="toolbar-inner">
+                            	
+                                <a href="#index" class="link"><i class="fa fa-music"></i></a>
+                                <a href="#videos" class="link"><i class="fa fa-youtube-square"></i></a>
+                                <a href="#announcements" class="link"><i class="fa fa-microphone"></i></a>
+                                <a href="#calendar" class="link"><i class="fa fa-calendar"></i></a>
+                                <a href="#twitter" class="link"><i class="fa fa-twitter"></i></a>
+                                
+                            </div>
+                        </div> <!-- look at this guy -->
+                   
+  <!-- Page content Thing -->
+    <div class="page-content">    
+       <table id="mosaictable" cellpadding="0" cellspacing="0" width="100%">
+				<tbody>	
+					<tr>
+						<td align="center">
+							<div data-layout="menuitem" class="gridmenuimagecontainer">
+								<a data-layout-editable="link" href="menu.html"><img data-layout-editable="image" src="img/_2854601_orig.jpg" class="gridmenuimage" title="Item1"> 
+								</a>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>	
+            
+        <div class="posts searchbar-not-found">
+                Nothing found
+        </div> 
+     
+     <div class="blog-posts searchbar-found">
+              <ul class="posts">
+                <li style="display: list-item;">
+                    <div class="post_entry">
+                        <div class="post_date">
+                            <span class="day">01</span>
+                            <span class="month">may</span>
+                        </div>
+                        <div class="post_title">
+							
+                            <p>Eyadini, Umlazi</p>
+                            <p class="region">KZN</p>
+							
+                        </div>
+                    </div>
+                </li>
+                <li style="display: list-item;">
+                    <div class="post_entry">
+                        <div class="post_date">
+                            <span class="day">26</span>
+                            <span class="month">june</span>
+                        </div>
+                        <div class="post_title">
+                        	<p>TBC, Richards Bay</p>
+                            <p class="region">KZN</p>
+                        </div>
+                    </div>
+                </li>
+              </ul>
+              
+  
+    </div>	<!-- Hide scroll things -->
+</div> <!-- cALENDAR events page end -->
+
+		<div class="page cached" data-page="twitter">
+            <div class="navbar">
+                  <div class="navbar-inner">
+                        <div class="center">Twitter</div>
+                  </div>
+             </div>
+                                           
+             <div class="toolbar toolbar-bottom"> <!-- Toolbar -->
+             	<div class="toolbar-inner">            	
+                    <a href="#index" class="link"><i class="fa fa-music"></i></a>
+                    <a href="#videos" class="link"><i class="fa fa-youtube-square"></i></a>
+                    <a href="#announcements" class="link"><i class="fa fa-microphone"></i></a>
+                    <a href="#calendar" class="link"><i class="fa fa-calendar"></i></a>
+                    <a href="#twitter" class="link"><i class="fa fa-twitter"></i></a>         
+                  </div>
+              </div> <!-- look at this guy -->
+                   
+  <!-- Page content Thing -->
+	<div class="page-content"> 
+		    <div class="social-feed-container">
+    		</div>
+			    
+ <!-- Page content Thing End-->    
+    </div>         
+</div> <!-- twitter feeds page  end-->                      
+                        
+
+                            
+                    </div>    <!-- Main content ends here all mighty controller -->
+                                  
+        </div>
+    </div>     
+</div> <!-- music feeds page  end-->
+
+                        
+                    </div>
+                    
+                </div>
+            </div> <!-- View main end-->
+        </div> <!-- end navbar -->
+       
+
+          <!-- Path to your app js-->
+          <script type="text/javascript" src="js/framework7.min.js"></script>
+          <script type="text/javascript" src="js/my-app.js"></script>
+          <script type="text/javascript" src="cordova.js"></script>
+          <script type="text/javascript" src="js/index.js"></script>
+          <script type="text/javascript" src="js/APlayer.min.js"></script>
+      <!--    <script type="text/javascript" src="js/twitter.js"></script> -->
+      
+      
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- Codebird.js - required for TWITTER -->
+<script src="js/codebird.js"></script>
+<!-- doT.js for rendering templates -->
+<script src="js/doT.min.js"></script>
+<!-- Moment.js for showing "time ago" and/or "date"-->
+<script src="js/moment.min.js"></script>
+<!-- Moment Locale to format the date to your language (eg. italian lang)-->
+<script src="js/it.js"></script>
+<!-- Social-feed js -->
+<script src="js/jquery.socialfeed.js"></script>
+ 
+
+      
+          
+          <script type="text/javascript">
+              app.initialize();
+          </script>
+          
+ 
+ 
+ <script>
+   (function() {
+      var script = document.createElement('script');
+ 
+      script.type = 'text/javascript';
+      script.async = true;
+      script.src = 'http://sd.toneden.io/production/toneden.loader.js'
+ 
+      var entry = document.getElementsByTagName('script')[0];
+      entry.parentNode.insertBefore(script, entry);
+   }());
+ 
+   ToneDenReady = window.ToneDenReady || [];
+   ToneDenReady.push(function() {
+      // This is where all the action happens:
+      ToneDen.player.create({
+         dom: '#player',
+         urls: [
+            'https://soundcloud.com/brian-temba'
+         ]
+      });
+   });
+</script>
+ 
+          
+
+    
+    <script>
+$('.social-feed-container').socialfeed({
+	
+	    facebook:{
+        accounts: ['HaMiKa_SA','HaMiKa_SA'],  //Array: Specify a list of accounts from which to pull wall posts
+        limit: 2,                                   //Integer: max number of posts to load
+        access_token: '1597977807161966|kYncD7XJOlsj4OK0dEhQAXq1ovo'  //String: "APP_ID|APP_SECRET"
+    },
+
+    // TWITTER
+    twitter:{
+        accounts: ['@briantemba'],                      //Array: Specify a list of accounts from which to pull tweets
+        limit: 40,                                   //Integer: max number of tweets to load
+        consumer_key: 'pt3ynTbsRg7Yu5MNOWzH3jsUx',          //String: consumer key. make sure to have your app read-only
+        consumer_secret: 'yapgHvs41zOkNutPPyLSMEO0hjagBdAcXLiMmHNxKo8Fy2CA0B',//String: consumer secret key. make sure to have your app read-only
+     },
+
+
+    // INSTAGRAM
+    instagram:{
+        accounts: ['@briantemba','#briantemba'],  //Array: Specify a list of accounts from which to pull posts
+        limit: 15,                                   //Integer: max number of posts to load
+        client_id: '8382bf4357034cf68616efa9fe87d7fa',       //String: Instagram client id (option if using access token)
+        access_token: 'e94a2a832fb94d7cbf096a2d96e03f29' //String: Instagram access token
+    }
+
+});
+
+	
+	</script>
+
+    </body>
+</html>

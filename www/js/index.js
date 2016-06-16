@@ -25,8 +25,7 @@
   };
 
   window.plugins.OneSignal.init("55a41db6-3db8-4861-97f7-7bedad86b6f7",
-                                 {googleProjectNumber: "339319808924
-"},
+                                 {googleProjectNumber: "339319808924"},
                                  notificationOpenedCallback);
   
   // Show an alert box if a notification comes in when the user is in your app.
